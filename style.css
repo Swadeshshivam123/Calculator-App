@@ -1,0 +1,207 @@
+/* CSS file for the CALCULATOR App - (created by - Swadesh Shivam) */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: linear-gradient(to left bottom, #54aefc, #65a7ff, #7d9eff, #9892ff, #b385fd, #da7be4, #f276c9, #ff76ae, #ff918f, #ffb285, #f2d194, #e3ebb7);
+}
+
+#calculator
+{
+    height: 73vh;
+    width: 45vw;
+    min-width: 300px;
+    min-height: 400px;
+    margin: 15vh auto;
+    background-image: linear-gradient(to left bottom, #f56bd8, #ff6fab, #ff8386, #ff9e70, #efb66d, #dec26f, #cccd79, #b8d789, #a4dc90, #8ce19b, #6de5aa, #3de9bc);
+    border: 5px solid whitesmoke;
+    border-radius: 20px;
+    
+}
+
+#heading
+{
+    height: 12%;
+    width: 96%;
+    margin-top: 4%;
+    margin-left: 2%;
+    background-image: linear-gradient(to right bottom, #bd8800, #c89b15, #d2af26, #dbc336, #e4d747, #e3cd3f, #e1c237, #dfb830, #cd8d15, #b76304, #9d3901, #7f0000);
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform;
+    transition-delay: 0.2s;
+}
+
+#heading:hover
+{
+    transform: scale(1.02);
+    background-image: linear-gradient(to right bottom, #f927e4, #df31e9, #c33aec, #a441ee, #8146ee, #6062f9, #3978ff, #0089ff, #00abff, #00c6f9, #00dbd4, #3bebaa);
+}
+
+#calc-head
+{
+    margin: auto;
+    font-size: 2.7rem;
+    font-weight: bolder;
+    font-family: cursive;
+    text-align: center;
+    color: grey;
+}
+
+#calc-head:hover
+{
+    font-size: 2.9rem;
+    font-style: italic;
+    text-align: center;
+    color: grey;
+}
+
+#display
+{
+    height: 18%;
+    width: 96%;
+    margin-top: 3%;
+    margin-left: 2%;
+    background-image: linear-gradient(to right top, #12046e, #31004f, #330036, #2c0022, #210013, #280619, #300a1e, #390c23, #5d0241, #7f0068, #9b0098, #ad00d1);
+    border: 2px solid lightcyan;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#display #previous-operand
+{
+    color: rgba(255,255,255,.75);
+    font-size: 1.5rem;
+}
+
+#display #current-operand
+{
+    color: white;
+    font-size: 2.5rem;
+}
+
+#btns-container
+{
+    height: 53%;
+    width: 96%;
+    background-color: lightgrey;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.btns-sub-container
+{
+    height: 20%;
+    width: 100%;
+    background-color: rgb(199, 137, 137);
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}
+
+.btns-sub-container2
+{
+    height: 20%;
+    width: 100%;
+    background-color: rgb(199, 137, 137);
+    display: flex;
+}
+
+.c1
+{
+    height: 100%;
+    width: 25%;
+    background-image: linear-gradient(to right bottom, #032ab4, #082cc0, #0f2dcc, #172fd9, #1e30e5, #1341ee, #074ff6, #005dfd, #0073fb, #0084f2, #0091e4, #279cd3);
+    border-right: 2px solid lightgray;
+    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-weight: bolder;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    outline: none;
+    color: grey;
+}
+
+.c1:hover
+{
+    size: 1.5ex;
+    background-image: linear-gradient(to right bottom, #89b403, #9dae00, #afa700, #c0a000, #ce9900, #c1a00a, #b5a619, #a8ac27, #7eba54, #51c384, #20c8b0, #27cad3);
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.c2
+{
+    height: 100%;
+    width: 25%;
+    color: white;
+    background-image: radial-gradient(circle, #f80000, #f7020b, #f50413, #f4081a, #f20c20, #f10828, #f00730, #ee0837, #ec0641, #ea0a4b, #e71054, #e3185d);
+    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-weight: bolder;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    outline: none;
+}
+
+.c2:hover
+{
+    size: 1.5ex;
+    background-image: linear-gradient(to right bottom, #e33558, #ea2669, #ee137c, #ef0091, #ec00a8, #e710b8, #e01fc8, #d62dd8, #cf3be2, #c647eb, #bd52f4, #b35bfc);
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.c3
+{
+    height: 100%;
+    width: 50.4%;
+    background-image: linear-gradient(to right bottom, #032ab4, #082cc0, #0f2dcc, #172fd9, #1e30e5, #1341ee, #074ff6, #005dfd, #0073fb, #0084f2, #0091e4, #279cd3);
+    border-right: 2px solid lightgray;
+    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-weight: bolder;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    outline: none;
+    color: grey;
+}
+
+.c3:hover
+{
+    size: 1.5ex;
+    background-image: linear-gradient(to right bottom, #89b403, #9dae00, #afa700, #c0a000, #ce9900, #c1a00a, #b5a619, #a8ac27, #7eba54, #51c384, #20c8b0, #27cad3);
+    font-size: 2rem;
+    font-style: italic;
+}
+
+#button-clear:hover
+{
+    background-color: #ff3300;
+}
